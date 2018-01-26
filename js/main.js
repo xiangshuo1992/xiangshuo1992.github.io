@@ -5,7 +5,7 @@ sitemap:
 ---
 
 $(document).ready(function () {
-  $('a.blog-button').click(function (e) {
+  $('a.blog-button').tap(function (e) {
     if ($('.panel-cover').hasClass('panel-cover--collapsed')) return
     currentWidth = $('.panel-cover').width()
     if (currentWidth < 960) {
@@ -25,12 +25,12 @@ $(document).ready(function () {
     $('.panel-cover').addClass('panel-cover--collapsed')
   }
 
-  $('.btn-mobile-menu').click(function () {
+  $('.btn-mobile-menu').tap(function () {
     $('.navigation-wrapper').toggleClass('visible animated bounceInDown')
     $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn')
   })
 
-  $('.navigation-wrapper .blog-button').click(function () {
+  $('.navigation-wrapper .blog-button').tap(function () {
     $('.navigation-wrapper').toggleClass('visible')
     $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn')
   })
