@@ -6,6 +6,10 @@
 
 /* Modifications */
 
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 pre.highlight,
 .highlight pre {
   padding: 10px;
